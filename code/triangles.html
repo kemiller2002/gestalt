@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <script>
+      function render(svg) {}
+    </script>
+
+    <style>
+      #artBoard {
+        width: 80%;
+        height: 80%;
+      }
+      body {
+        padding: 1em;
+      }
+
+      [shape] {
+        height: 0;
+        width: 0;
+        border-left: 2em solid transparent;
+        border-bottom: 2em solid green;
+        margin-right: 1em;
+        margin-bottom: 1em;
+        transform: rotate(45deg);
+      }
+
+      [wrapper] {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      [boxContainer] {
+        margin: 2em;
+      }
+      [main] {
+        display: flex;
+        flex-direction: row;
+      }
+
+      [d] {
+        padding-top: 0.5em;
+        transform: rotate(225deg);
+      }
+    </style>
+  </head>
+  <body onload="render(document.getElementById('artBoard'))">
+    <div main>
+      <div boxContainer>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+        <div wrapper>
+          <span shape a></span>
+          <span shape b></span>
+          <span shape c></span>
+          <span shape d></span>
+          <span shape e></span>
+          <span shape f></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

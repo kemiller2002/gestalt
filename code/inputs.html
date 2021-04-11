@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+
+    <style>
+      :root {
+        --entry1: red;
+        --entry2: blue;
+        --entry3: green;
+      }
+
+      body {
+        margin: 1em;
+        margin-left: 3em;
+      }
+      [label] {
+        font-size: 2em;
+      }
+
+      input {
+        padding: 1em;
+        font-size: 1.5em;
+      }
+
+      [container] {
+      }
+
+      div {
+        margin: 1em;
+      }
+
+      [last-name] {
+        color: var(--entry1);
+      }
+      [last-name] > div > input {
+        border-color: var(--entry1);
+      }
+
+      [first-name] {
+        color: var(--entry3);
+      }
+
+      [first-name] > div > input {
+        border-color: var(--entry3);
+      }
+
+      [email-address] {
+        color: var(--entry2);
+      }
+
+      [email-address] > div > input {
+        border-color: var(--entry2);
+      }
+    </style>
+  </head>
+  <body>
+    <div container first-name>
+      <div label><span>First Name</span></div>
+      <div input><input type="text" /></div>
+    </div>
+    <div container last-name>
+      <div label><span>Last Name</span></div>
+      <div input><input type="text" /></div>
+    </div>
+
+    <div container email-address>
+      <div label><span>Email Address</span></div>
+      <div input><input type="text" /></div>
+    </div>
+  </body>
+</html>
