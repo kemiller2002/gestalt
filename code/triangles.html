@@ -14,18 +14,26 @@
       }
 
       [shape] {
-        height: 0;
+        /*height: 0;
         width: 0;
-        border-left: 2em solid transparent;
-        border-bottom: 2em solid green;
+        
         margin-right: 1em;
         margin-bottom: 1em;
         transform: rotate(45deg);
+        */
+
+        height: 2em;
+        margin: 0.5em;
+        width: 2em;
+        background-color: black;
+        border-top: 0.25em solid green;
+        border-right: 0.25em solid green;
       }
 
       [wrapper] {
         display: flex;
         flex-wrap: wrap;
+        /*border: thin solid black;*/
       }
 
       [boxContainer] {
@@ -37,16 +45,25 @@
       }
 
       [d] {
-        padding-top: 0.5em;
-        transform: rotate(225deg);
+        transform: rotate(180deg);
       }
     </style>
+    <script>
+      function rotate() {
+        const elements = Array.from(document.getElementsByTagName("span"));
+
+        elements.forEach((x) => {
+          const rand = Math.random() * 360;
+          x.style.transform = `rotate(${rand}deg)`;
+        });
+      }
+    </script>
   </head>
-  <body onload="render(document.getElementById('artBoard'))">
+  <body onload="rotate()">
     <div main>
       <div boxContainer>
         <div wrapper>
-          <span shape a></span>
+          <div shape a></div>
           <span shape b></span>
           <span shape c></span>
           <span shape d></span>

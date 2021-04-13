@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <script>
+      function render(svg) {}
+    </script>
+
+    <style>
+      #artBoard {
+        width: 80%;
+        height: 80%;
+      }
+      body {
+        padding: 1em;
+        /*background-color: black;*/
+      }
+
+      [dot] {
+        height: 2em;
+        width: 2em;
+        background-color: #ccc;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 0.1em;
+      }
+
+      [d] {
+        background-color: green;
+      }
+
+      [ee] {
+        background-color: yellow;
+      }
+      [wrapper] {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      [boxContainer] {
+        margin: 2em;
+      }
+      [main] {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body onload="render(document.getElementById('artBoard'))">
+    <svg viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Simple rectangle -->
+      <rect width="20" height="20" />
+
+      <rect x="50" width="20" height="20" fill="yellow" />
+    </svg>
+  </body>
+</html>
